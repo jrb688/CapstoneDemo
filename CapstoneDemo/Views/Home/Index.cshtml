@@ -2,7 +2,15 @@
     ViewData["Title"] = "Home Page";
 }
 
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
 <div class="body">
-     <h2>Next Generation Bench Test Utility</h2>
-     <p> This application demonstrates login capabilities and intigration with the database.</p>
+    <h2>Next Generation Bench Test Utility</h2>
+    <p> This application demonstrates login capabilities and intigration with the database.</p>
 </div>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <button type="button" onclick="location.href='@Url.Action("TcpClient", "Account")'">Send Python Script</button>
+}
