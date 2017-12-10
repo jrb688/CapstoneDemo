@@ -1,0 +1,9 @@
+test.py and TcpClient.cs need to be in the same folder.
+Correct the file paths in TcpClient.cs to the file paths you just placed them at.
+Tie TcpClient.cs to a button on the webapp.
+
+results.html and server.py need to be in a different folder.
+
+launch server.py with eithe IDLE or CMD
+
+execute TcpClient.cs with the button you tied it to.
