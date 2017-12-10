@@ -9,7 +9,7 @@ using System.IO;
 
 namespace ConsoleApp1
 {
-    class Program
+    class TcpClient
     {
         static void Main(string[] args)
         {
